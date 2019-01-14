@@ -18,6 +18,10 @@ $(document).ready(function() {
 				success: function(data) {	
 									
 					displayMovies(data['movies'], data['actors']);												
+				},
+				error: function (jqXHR, status, err) {
+					$('#display-info').html( "Your search did not return any movies.");
+					$("#display-results").html("");
 				}
 			});
 
@@ -87,7 +91,7 @@ function displayMovies( movieArray, actorArray){
 		}												
 	);	
 	
-	$('#display-info').html( "We found " + count + " movies for you.");
+	$('#display-info').html( "We found " + count + " movie(s) for you.");
 }
 
 
