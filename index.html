@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="./library/movie.css">
+	<title>MOVIE API</title>
+	<style>
+	
+	</style>
+</head>
+<body>
+	<div id="app">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+				  <div></div>
+				</div>
+				<div class="col-8">
+					<form id="movieQueryForm">
+						<div class="input-group mb-3">
+						  <div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">Search &gt;</span>
+						  </div>
+						  <input id="movieTitle" name="movieTitle" type="text" class="form-control" placeholder="Find a movie" aria-label="search" aria-describedby="basic-addon1">
+						</div>&nbsp;
+						
+						<div class="row">
+							<div class="col-4">Filter by:</div>
+							<div class="col-4  my-1" id="filter-category">	
+								<select class="custom-select mr-sm-2" id="select-category" name="category">
+									<option selected>Category</option>
+								
+								</select>
+							</div>
+							<div class="col-4  my-1" id="filter-rating">	
+								<select class="custom-select mr-sm-2" id="select-rating" name="rating">
+									<option selected>Rating</option>
+								
+								</select>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-3">
+								<button type="button" id="btn-submit" class="btn btn-outline-primary" type="submit">Get Movies</button>
+							</div>
+							<div>
+								<span id="errMsg"></span>
+							</div>
+						</div>
+					</form>	
+				</div>
+				<div class="col">
+					
+				</div>
+			</div>
+			<div  id="movie-results-container">
+				<div class="row">
+					<div class="col-2">
+					  <div></div>
+					</div>
+					<div class="col-10" id="display-info">						
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col">
+						&nbsp;
+					</div>
+					<div id="display-results" class="col-10">
+						&nbsp;
+					</div>
+					<div class="col">
+						&nbsp;
+					</div>
+				</div>
+			</div>
+		
+			
+		</div>
+	
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="./library/js/movie.js"></script>
+</body>
+</html>

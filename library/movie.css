@@ -1,0 +1,14 @@
+#app, #movie-results-container{
+	padding-top: 30px;
+}
+#display-info{
+	padding: 10px 0px 30px 0px;
+}
+#errMsg{
+	color: #cc0000;
+	font-size: 20px;
+}
+.bg-info{
+	padding: 10px 0px 10px 13px;
+	color: #fff;
+}
