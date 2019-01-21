@@ -9,9 +9,12 @@ $database = new Database();
 $db = $database->getConnection();
 
 $film_collection = new Film($db);
-$res = $film_collection->getFilms();
-$num = $res->rowCount();
+$res = $film_collection->getFilms( );
+$num = 0;
 
+if($res){
+	$num = $res->rowCount();
+}	
 if($num >0){
 	
 	$film_arr = array();
